@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calle 24 - Ritmo Verde</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <a class="logo" href="index.html">♫ <span>CARLY</span></a>
+
+  <!-- Este es el botón que abre todo -->
+  <div class="menu-desplegable-principal">
+    <input type="checkbox" id="checkMenu" hidden>
+    <label for="checkMenu" class="menu-boton">≡ Menú</label>
+
+    <nav id="menu">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="index.html#artistas">Artistas</a>
+      <a href="index.html#audios">Canciones</a>
+      <a href="index.html#videos">Videos</a>
+      <a href="index.html#galeria">Galería</a>
+      <a href="index.html#acerca">Acerca de</a>
+    </nav>
+  </div>
+</header>
+
+<main style="padding-top: 100px;">
+  <center>
+    <article class="tarjeta video" style="max-width: 600px; margin:= 0 auto;"> 
+      <video controls preload="metadata" poster="calle.jpg" style="width: 100%; height: auto; border-radius: 12px;">
+        <source src="noche.mp4" type="video/mp4">
+        Tu navegador no admite video.
+      </video>
+      <h3>Calle 24.</h3>
+    </article>
+  </center>
+</main>
+
+</body>
+</html>
