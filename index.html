@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ritmo verde | Reproductor de música</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+  <a class="logo" href="#inicio">
+  	<img src="logo.jpg" alt="Carly">
+  	♫ <span>CARLY</span>
+  </a>
+
+  <!-- Este es el botón que abre todo -->
+  <div class="menu-desplegable-principal">
+    <input type="checkbox" id="checkMenu" hidden>
+    <label for="checkMenu" class="menu-boton">≡ Menú</label>
+
+    <nav id="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#artistas">Artistas</a>
+      <a href="#audios">Canciones</a>
+      <a href="#videos">Videos</a>
+      <a href="#galeria">Galería</a>
+      <a href="#acerca">Acerca de</a>
+       <a href="formulario.html">Formulareo</a>
+    </nav>
+  </div>
+</header>
+    </nav>
+  </header>
+
+  <main>
+          <section class="hero" id="inicio">
+    <center><table border="0"></center>
+    <tr>
+    <td><img src="logo.jpg" height="400" width="500">
+        <div class="hero-texto"></div></td>
+    <td><p class="etiqueta">TU ESPACIO MUSICAL</p>
+      <h2>Tu ritmo. Tu fuerza.<br><span>Una canción puede cambiarlo todo.</span></h2></b>
+      <p>Te invto a que escuches estas canciones.</p>
+       </div></td>
+    </tr>
+    </table>
+    </section>
+    <section>
+    <section class="seccion fondo" id="galeria">
+      <div class="titulo-seccion"><div><p class="etiqueta"></p><h2>Galería musical de artistas.</h2></div></div>
+      <div class="rejilla galeria">
+        <img src="CALLE.JPG" alt="Portada musical color verde">
+        <img src="ESPINOZA.JPG" alt="Portada musical color morado">
+        <img src="JUNIOR.JPG" alt="Portada musical color naranja">
+        <img src="ARIEL.JPG" alt="Portada musical color azul">
+        <img src="IVAN.JPG" alt="Portada musical color rosa">
+
+      </div>
+    </section>
+    </section>
+
+    <section class="seccion fondo" id="audios">
+      <div class="titulo-seccion"><div><p class="etiqueta">DALE PLAY</p><h2>Zona de canciones</h2></div></div>
+      <p class="intro">MIS CANCIONES FAVORITAS.</p>
+      <div class="lista-canciones">
+        <article class="cancion"><span class="numero">01</span><div class="detalle"><h3>Demencia</h3><p>Junior H · Audio 1</p></div><audio controls preload="none"><source src="demencia.mp3" type="audio/mpeg">Tu navegador no puede reproducir este audio.</audio></article>
+        <article class="cancion"><span class="numero">02</span><div class="detalle"><h3>Sale Para Ser Felices </h3><p>Ivan Cornejo· Audio 2</p></div><audio controls preload="none"><source src="sale.mp3" type="audio/mpeg">Tu navegador no puede reproducir este audio.</audio></article><article class="cancion"><span class="numero">03</span><div class="detalle"><h3>Lo Intentamos</h3><p>Junior H · Audio 3</p></div><audio controls preload="none"><source src="intentamos.mp3" type="audio/mpeg">Tu navegador no puede reproducir este audio.</audio></article>
+
+        <article class="cancion"><span class="numero">04</span><div class="detalle"><h3>Por Enamorarme</h3><p>Los Pebles Del Rancho· Audio 4</p></div><audio controls preload="none"><source src="plebes.mp3" type="audio/mpeg">Tu navegador no puede reproducir este audio.</audio></article>
+        <article class="cancion"><span class="numero">05</span><div class="detalle"><h3>Toxicos</h3><p>Calle 24 · Audio 5</p></div><audio controls preload="none"><source src="Toxicos.mp3" type="audio/mpeg">Tu navegador no puede reproducir este audio.</audio></article>
+      </div>
+    </section>
+
+    <section class="seccion" id="videos">
+      <div class="titulo-seccion"><div><p class="etiqueta">EN PANTALLA</p><h2>Videos musicales</h2></div></div>
+      <p class="intro">DALE REPRODUCIR .</p>
+      <div class="rejilla videos">
+        <article class="tarjeta video"><video controls preload="metadata" poster="ariel.jpg"><source src="ariel.mp4" type="video/mp4">Tu navegador no admite video.</video><h3>Ariel Camacho</h3></article>
+        <article class="tarjeta video"><video controls preload="metadata" poster="ivan.jpg"><source src="ivan.mp4" type="video/mp4">Tu navegador no admite video.</video><h3>Ivan Cornejo</h3></article>
+        <article class="tarjeta video"><video controls preload="metadata" poster="junior.jpg"><source src="demencia.mp4" type="video/mp4">Tu navegador no admite video.</video><h3>Junior H</h3></article>
+        <article class="tarjeta video"><video controls preload="metadata" poster="espinoza.jpg"><source src="espinoza.mp4" type="video/mp4">Tu navegador no admite video.</video><h3>Espinoza Paz</h3></article>
+        <article class="tarjeta video"><video controls preload="metadata" poster="calle.jpg"><source src="noche.mp4" type="video/mp4">Tu navegador no admite video.</video><h3>Calle 24</h3></article>
+      </div>
+    </section>
+         <section class="seccion" id="artistas">
+      <div class="titulo-seccion"><div><p class="etiqueta">DESCUBRE</p><h2>Artistas destacados</h2></div><span class="nota"></span></div>
+      <div class="rejilla artistas">
+        <article class="tarjeta artista"><A HREF="plebes.html"><img src="ariel.jpg" alt="Ilustración de artista pop"><h3>Por Enamorarte</h3><p>Ariel Camacho</p></article></A>
+
+        <article class="tarjeta artista"><A HREF="calle.html"><img src="calle.jpg" alt="Ilustración de artista rock"><h3>Toxicos</h3><p>Calle 24</p></article></A>
+        <article class="tarjeta artista"><A HREF="ivan.html"><img src="ivan.jpg" alt="Ilustración de artista urbano"><h3>Sale para Ser Felices</h3><p>Ivan Cornejo</p></article></A>
+        <article class="tarjeta artista"><A HREF="junior.html"><img src="junior.jpg" alt="Ilustración de artista regional"><h3>Demencia</h3><p>Junior H</p></article></A>
+        <article class="tarjeta artista"><A HREF="espinoza.html"><img src="espinoza.jpg" alt="Ilustración de artista indie"><h3>Lo Intentamos</h3><P>Espinoza Paz</p></article>
+      </div>
+    </section>
+
+    
+    <section class="seccion acerca" id="acerca">
+      <p class="etiqueta"><H1>CARLY</H1></p><h2>Hecho para disfrutar la música</h2>
+      <p>Carly es tu rincón feliz. Un espacio lleno de buena vibra,canciones que alegran,artistas que inspiran y videos que te hacen cantar. Todo organizado para que solo te preocupes por disfrutar.</p>
+      <div class="datos"><span><b>Autor:</b>Carla Noemy Alvarez Carrera</span><span><b>Edición:</b> 2026</span><span><b>Plantel:</b> CECyTE Oaxaca, Plantel 35</span></div>
+    </section>
+
+
+
+    
+  </main>
+  <footer><a class="logo" href="#inicio">♫ CARLY</a></footer>
+  <script>
+    const boton = document.getElementById('menuBoton');
+    const menu = document.getElementById('menu');
+    boton.addEventListener('click', () => menu.classList.toggle('abierto'));
+    menu.querySelectorAll('a').forEach(enlace => enlace.addEventListener('click', () => menu.classList.remove('abierto')));
+  </script>
+</body>
+</html>
