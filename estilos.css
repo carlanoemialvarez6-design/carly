@@ -1,0 +1,133 @@
+/* Ritmo Verde — estilos principales */
+:root{--fondo:#151b8d;--panel:#1c241f;--verde:#1ed760;--verde-claro:#b6f5c9;--texto:#fbfbfb;--suave:#aeb8b0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;background:var(--fondo);color:var(--texto);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.encabezado{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:14px 6%;background:rgba(12,17,13,.96);border-bottom:1px solid #2b362e;backdrop-filter:blur(10px)}
+.logo{font-size:1.35rem;font-weight:800;color:var(--verde);white-space:nowrap}
+#menu{display:flex;align-items:center;gap:22px}
+#menu>a,.desplegable>a{font-size:.95rem;color:#e7eee8}
+#menu a:hover{color:var(--verde)}
+.desplegable{position:relative}Espinoza Paz 
+.submenu{display:none;position:absolute;top:100%;left:-12px;min-width:145px;padding:8px;background:#202a23;border:1px solid #354338;border-radius:12px}
+.submenu a{display:block;padding:8px 10px}
+.menu-boton{display:none;background:none;border:1px solid #526056;color:white;border-radius:8px;font-size:1.3rem;padding:4px 10px}
+.hero{padding:90px 8% 100px;min-height:430px;background:radial-gradient(ellipse at 80% 25%,#245735 0,transparent 35%),linear-gradient(135deg,#101411,#18251b)}
+.etiqueta{font-size:.75rem;letter-spacing:3px;font-weight:800;color:var(--verde);margin:0 0 8px}
+.hero h1{font-size:clamp(2.8rem,7vw,5.2rem);line-height:1.03;margin:10px 0 20px;letter-spacing:-2px}
+.hero h1 span{color:var(--verde)}
+.hero>p:not(.etiqueta){max-width:530px;color:#c4cec6;font-size:1.05rem}
+.boton{display:inline-block;background:var(--verde);color:#09210f;font-weight:800;padding:12px 22px;border-radius:30px;margin-top:15px;transition:transform .2s}
+.boton:hover{transform:scale(1.04)}
+.seccion{padding:65px 7%}
+.fondo{background:#171e19}
+.titulo-seccion{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:24px}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.2;margin:0}
+.nota,.intro,.aviso{color:var(--suave)}
+.intro{margin:0 0 22px}
+.rejilla{display:grid;gap:18px}
+.artistas{grid-template-columns:repeat(5,minmax(0,1fr))}
+.tarjeta{background:var(--panel);padding:14px;border:1px solid #2d3930;border-radius:15px;overflow:hidden;transition:transform .2s,border-color .2s}
+.tarjeta:hover{transform:translateY(-4px);border-color:#4d7958}
+.artista img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px}
+.tarjeta h3{margin:10px 0 2px;font-size:1rem}
+.tarjeta p{margin:0;color:var(--suave);font-size:.88rem}
+.aviso{font-size:.85rem;margin-top:16px}
+.lista-canciones{display:grid;gap:10px}
+.cancion{display:flex;align-items:center;gap:16px;padding:14px 16px;background:#202821;border:1px solid #2d3930;border-radius:12px}
+.numero{font-weight:800;color:var(--verde);font-size:1.1rem}
+.detalle{flex:1;min-width:130px}
+.detalle h3{font-size:1rem;margin:0}
+.detalle p{font-size:.85rem;color:var(--suave);margin:2px 0 0}
+audio{width:min(330px,45%)}
+.videos{grid-template-columns:repeat(3,minmax(0,1fr))}
+.video video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#090b09;border-radius:9px}
+.galeria{grid-template-columns:repeat(5,minmax(0,1fr))}
+.galeria img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:13px;border:1px solid #354338}
+.acerca{max-width:900px;margin:auto;text-align:center}
+.acerca>p:not(.etiqueta){max-width:700px;margin:18px auto;color:#c4cec6}
+.datos{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:24px}
+.datos span{background:#202821;border:1px solid #354338;padding:9px 13px;border-radius:9px;font-size:.9rem}
+footer{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:22px 7%;border-top:1px solid #2b362e;background:#0c100d}
+footer p{color:var(--suave);font-size:.85rem;margin:0}
+code{color:var(--verde-claro)}
+@media(max-width:850px){.artistas{grid-template-columns:repeat(3,minmax(0,1fr))}.videos{grid-template-columns:repeat(2,minmax(0,1fr))}.galeria{grid-template-columns:repeat(3,minmax(0,1fr))}#menu{gap:12px}}
+@media(max-width:620px){.encabezado{padding:12px 5%}.menu-boton{display:block}#menu{display:none;position:absolute;top:100%;left:0;right:0;padding:16px 5%;background:#111812;border-bottom:1px solid #354338;align-items:stretch;flex-direction:column;gap:10px}#menu.abierto{display:flex}.submenu{position:static;display:block;margin:4px 0 0 12px;border:0;padding:0 8px;background:#18211a}.hero{padding:65px 7% 75px}.seccion{padding:48px 5%}.titulo-seccion{align-items:start;flex-direction:column}.artistas{grid-template-columns:repeat(2,minmax(0,1fr))}.videos{grid-template-columns:1fr}.galeria{grid-template-columns:repeat(2,minmax(0,1fr))}.cancion{flex-wrap:wrap;gap:10px}.detalle{flex:1 1 70%}audio{width:100%}footer{align-items:flex-start;flex-direction:column}}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  background: #0a1929;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+
+}
+.logo {
+ display: flex
+ align-items: center;
+ gap: 10px;
+ text-decoration:none;
+}
+
+.logo img {
+ height: 45px;
+ width: 45px;
+ object-fit: cover;
+ border-radius: 50%;
+ box-shawdow: 0 0 10px 
+}
+
+.logo span{
+ color: white;
+ font-size: 22px;
+ font-weight: bold;
+}
+.menu-desplegable-principal {
+  margin-left: auto; /* para que quede a la izquierda como querías */
+  position: relative;
+}
+
+.menu-boton {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  background: #132a3a;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: block;
+}
+
+#menu {
+  display: none; /* oculto hasta que le des clic */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 10px;
+  background: #132a3a;
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+
+#menu a:hover {
+  background: #00e5c0;
+  color: #0a1929;
+}
+
+/* ESTA LÍNEA HACE QUE SE DESPLIEGUE TODO CUANDO DAS CLIC */
+#checkMenu:checked ~ #menu {
+  display: flex;
+}
