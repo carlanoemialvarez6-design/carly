@@ -1,0 +1,10 @@
+RITMO VERDE — PLANTILLA ESCOLAR
+1. Abre index.html en Chrome para ver la página.
+2. index.html y estilos.css deben permanecer juntos.
+3. Para que los audios funcionen, coloca archivos MP3 en la carpeta audio y nómbralos:
+   cancion1.mp3, cancion2.mp3, cancion3.mp3, cancion4.mp3, cancion5.mp3.
+4. Para que los videos funcionen, coloca archivos MP4 en la carpeta video y nómbralos:
+   video1.mp4, video2.mp4, video3.mp4, video4.mp4, video5.mp4.
+5. Puedes reemplazar las imágenes SVG de la carpeta imagenes por imágenes propias, conservando sus nombres.
+6. Cambia “Escribe tu nombre” en index.html por tu nombre.
+NOTA: Se incluyen los cinco espacios de audio y video y cinco imágenes originales de muestra. No se incluyen canciones ni videos comerciales; debes añadir archivos que tengas permiso de usar.
