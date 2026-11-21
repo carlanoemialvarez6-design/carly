@@ -143,5 +143,48 @@ img{
   max-width:100%;
   height: auto;
 }
+@media(max-width: 768px){
+.hero {
+    flex-direction: column !important;
+    display: flex !important;
+    padding: 110px 16px 40px !important;
+    text-align: center !important;
+    min-height: auto !important;
+  }
+  .hero img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  .hero >*{
+  width: 100% !important;
+    max-width: 100% !important;
+  }
+}    
   
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
