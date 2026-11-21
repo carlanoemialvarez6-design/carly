@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Registro</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="encabezado">
+  <a class="logo" href="#inicio">
+  	<img src="logo.jpg" alt="Carly">
+  	♫ <span>CARLY</span>
+  </a>
+
+  <!-- Este es el botón que abre todo -->
+  <div class="menu-desplegable-principal">
+    <input type="checkbox" id="checkMenu" hidden>
+    <label for="checkMenu" class="menu-boton">≡ Menú</label>
+
+    <nav id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#artistas">Artistas</a>
+      <a href="index.html#audios">Canciones</a>
+      <a href="index.html#videos">Videos</a>
+      <a href="index.html#galeria">Galería</a>
+      <a href="index.html#acerca">Acerca de</a>
+       <a href="formulario.html">Formulareo</a>
+    </nav>
+  </div>
+</header>
+    </nav>
+  </header>
+<div class="formulario">
+  <h1>Suscribirse</h1>
+  <p>Completa todos los campos para registrarte.</p>
+
+  <form id="miFormulario">
+<div class="Formulario de Registro"
+    <label>Nombre</label>
+    <input type="text" id="nombre" placeholder="Ej. JUAN CARLOS" maxlength="50" required>
+    <small>Solo letras mayúsculas</small>
+
+    <label>Apellido paterno</label>
+    <input type="text" id="paterno" placeholder="Ej. PÉREZ" maxlength="30" required>
+    <small>Solo letras mayúsculas</small>
+
+    <label>Apellido materno</label>
+    <input type="text" id="materno" placeholder="Ej. GARCÍA" maxlength="30" required>
+    <small>Solo letras mayúsculas</small>
+
+    <label>Fecha de nacimiento</label>
+    <input type="date" id="fechaNacimiento" required>
+    <small>Selecciona día, mes y año en el calendario</small>
+
+    <label>Edad</label>
+    <input type="text" id="edad" placeholder="Ej. 25" maxlength="3" inputmode="numeric" required>
+    <small>Solo números</small>
+
+    <label>Numero de tarjeta</label>
+    <input type="text" id="tarjeta" placeholder="Ej. 5512341234565678" maxlength="16" inputmode="numeric" required>
+    <small>Solo 16 números, sin letras</small>
+
+     <div id="mensajeExito"></div>   
+    <button type="submit">REGISTRARSE</button>
+
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
